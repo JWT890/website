@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>A little bit about Me</title>
+        <title>About Me</title>
         <link rel="stylesheet" href="assets/style.css">
         <style>
             nav li {
@@ -13,6 +13,22 @@
                 text-decoration: none;
                 color: #0073b1;
                 font-weight: bold;
+            }
+            
+            .pet-gallery {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+                flex-wrap: wrap;
+            }
+
+            .pet-gallery img {
+                width: 350px;
+                height: auto;
+                border-radius: 10px;
+                object-fit: cover;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
         </style>
     </head>
@@ -30,4 +46,24 @@
     <h1>About Me</h1>
     <p>Graduate of the University of Alabama in Huntsville Class of 2023 with a Bachelors of Science in Business Administration in Information Systems</p>
     <p>Member of AFCEA Huntsville, Cyber Huntsville, DC256, ISC2 and Huntsville Hack the Box</p>
+
+    <h2>Pets</h2>
+    <p>I have two dogs, a English Springer Spaniel named Dash and a bloodhound named Ellie</p>
+    <div class="pet-gallery">
+        <img src="assets/Dash.jpeg" alt="Dash">
+        <img src="assets/Ellie.jpeg" alt="Ellie">
+    </div>
+
+    <section>
+        <h2>Miscellaneous</h2>
+        <p>Since I like watching movies and reading books, I also have a Letterboxd and a Goodreads account to keep track of movies and shows</p>
+        <ul>
+            <li>
+                <a href="https://letterboxd.com/jwt890/" target="_blank">Letterboxd</a>
+            </li>
+            <li>
+                <a href="https://www.goodreads.com/user/show/162920650-jon-taylor" target="_blank">Goodreads</a>
+            </li>
+        </ul>
+    </section>
 </body>
