@@ -1,28 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <h1>
-        Hello, I'm Jon William Taylor
-    </h1>
-    <body>
-        <h1>About me</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
+    <title>Jon William Taylor | Website</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img.profile {
+            display: block;
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .social-links {
+            vertical-align: middle;
+        }
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm Jon William Taylor</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
         <p>
-            I am a IT professional with a passion for coding, problem solving, learning new skills, cybersecurity and networking.
+            I am a IT professional with a passion for coding, problem-solving, learning new skills, cybersecurity, and networking
         </p>
-        <h1>Interests</h1>
+        <img src="assets/Jon William Taylor.jpeg" alt="Jon William Taylor" class="profile">
+    </section>
+
+    <section>
+        <h2>Interests</h2>
         <p>
-            I enjoy coding, watching movies & shows, spending time with my dogs and family and more
+            I enjoy coding, watching movies and shows, spending time with my dogs and family, reading, and more.
         </p>
-        <h1>Connect</h1>
-        <p>
-            <a href="https://github.com/JWT890">Github
-                <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github">
+    </section>
+
+    <section>
+        <h2>Connect</h2>
+        <p class="social-links">
+            <a href="https://www.linkedin.com/in/jonwilliamtaylor/" target="_blank">
+                <img src="assets/linkedinlogo.jpg" alt="LinkedIn">
+                LinkedIn
             </a>
-            <a href="https://www.linkedin.com/in/jonwilliamtaylor/">Linkedin
-                <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="linkedin">
+            <a href="https://github.com/JWT890" target="_blank">
+                <img src="assets/githublogo.png" alt="GitHub">
+                GitHub
             </a>
         </p>
-        <h1>Projects</h1>
-    </body>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <p>Check out my projects on <a href="projects.html">Projects</a></p>
+    </section>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -32,4 +108,5 @@
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
+</body>
 </html>
