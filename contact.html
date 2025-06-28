@@ -4,6 +4,55 @@
         <meta charset="UTF-8">
         <title>Contact Me</title>
         <link rel="stylesheet" href="assets/style.css">
+        <style>
+            body {
+                text-align: Arial, sans-serif;
+                text-align: center;
+            }
+
+            form {
+                display: inline-block;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 12px;
+                background-color: #f9f9f9;
+                margin-top: 20px
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                box-sizing: border-box;
+            }
+
+            button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 6px;
+                background-color: #0073b1;
+                color: white;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #005f90;
+            }
+
+            nav li {
+                display: inline;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #0073b1;
+                font-weight: bold;
+            }
+        </style>
     </head>
 </html>
 <body>
@@ -21,13 +70,13 @@
         <input type="text" name="name" id="name" placeholder="Your name" required /><br /><br />
         
         <label for="email">Email</label><br />
-        <input type="email" id="email" name="email" required /><br /><br /> 
+        <input type="email" id="email" name="email" placeholder="Your email" required /><br /><br /> 
         </label>
         <label for="company">Company</label><br />
-        <input type="text" id="company" name="company" required /><br /><br />
+        <input type="text" id="company" name="company" placeholder="Your company" required /><br /><br />
         
         <label for ="message">Message</label><br />
-        <textarea id="message" name="message" required></textarea><br /><br />
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea><br /><br />
         
         </label>
         <button type="submit">Send</button>
