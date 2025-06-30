@@ -62,30 +62,28 @@
         .certification-gallery {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             gap: 30px;
             margin-top: 30px;
         }
 
         .cert-card {
-            flex: 1 1 400px;
-            max-width: 480px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 1000px;           
         }
 
         .cert-card iframe {
-            width: 250%;
-            height: 550px;
-            border: none;
+            width: 100%;
+            height: 800px;
+            max-width: 100%;
             border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         @media (max-width: 768px) {
             .cert-card {
-                max-width: 90%;
+                flex-basis: 100%;
             }
         }
         </style>
@@ -111,10 +109,10 @@
         <p>Additionally, I also possess the TestOut Linux Pro certifcation</p>
         <div class="certification-gallery">
             <div class="cert-card">
-                <iframe src="assets/Jon William Taylor Security+ certificate.pdf" title="Security+ cert"></iframe>
+                <iframe src="assets/Jon William Taylor Security+ certificate.pdf" title="Security+ cert" width="100%" height="800ox"></iframe>
             </div>
             <div class="cert-card">
-                <iframe src="assets/Jon William Taylor CC Certification.pdf" title="CC cert"></iframe>
+                <iframe src="assets/Jon William Taylor CC Certification.pdf" title="CC cert" width="100%" height="800ox"></iframe>
             </div>
         </div>
     </section> 
