@@ -5,54 +5,89 @@
         <title>Certifications</title>
         <link rel="stylesheet" href="assets/styles.css">
         <style>
-            body {
-                text-align: Arial, sans-serif;
-                text-align: center;
-            }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fff;
+            color: #333;
+        }
 
-            nav li {
-                display: inline;
-            }
+        nav {
+            background-color: #f0f0f0;
+            padding: 15px 0;
+        }
 
-            nav a {
-                text-decoration: none;
-                color: #0073b1;
-                font-weight: bold;
-            }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-            section {
-                margin: 20px;
-                padding: 20px;
-                border: 2px solid #ccc;
-                border-radius: 20px;
-                background-color: #f9f9f9;
-            }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-            h1 {
-                text-align: center;
-                margin-top: 20px;
-            }
+        nav a {
+            text-decoration: none;
+            color: #0073b1;
+            font-weight: bold;
+        }
 
-            h2 {
-                text-align: center;
-                margin-top: 20px;
-            }
+        nav a:hover {
+            color: #005582;
+        }
 
-            .certifcation-gallery {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                margin-top: 20px;
-                flex-wrap: wrap;
-            }
+        .toggle-label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
 
-            .certifcation-gallery img {
-                width: 250px;
-                height: auto;
-                border-radius: 10px;
-                object-fit: cover;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        section {
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 1000px;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .certification-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .cert-card {
+            flex: 1 1 400px;
+            max-width: 480px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .cert-card iframe {
+            width: 250%;
+            height: 550px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .cert-card {
+                max-width: 90%;
             }
+        }
         </style>
     </head>
 </html>
@@ -74,13 +109,13 @@
         <h2>Certifications</h2>
         <p>Certifications I currently possess are the CompTIA Security+ 701 certifcation and the ISC2 Certified in Cybersecurity Certification</p>
         <p>Additionally, I also possess the TestOut Linux Pro certifcation</p>
-        <div class="certifcation-gallery">
-            <a href="assets/Jon William Taylor Security+ certificate.pdf" target="_blank" rel="noopener noreferrer">
-                <iframe src="assets/Jon William Taylor Security+ certificate.pdf" width="100%" height="250px"></iframe>
-            </a>
-            <a href="assets/Jon William Taylor CC Certification.pdf" target="_blank" rel="noopener noreferrer">
-                <iframe src="assets/Jon William Taylor CC Certification.pdf" width="100%" height="250px"></iframe>
-            </a>
+        <div class="certification-gallery">
+            <div class="cert-card">
+                <iframe src="assets/Jon William Taylor Security+ certificate.pdf" title="Security+ cert"></iframe>
+            </div>
+            <div class="cert-card">
+                <iframe src="assets/Jon William Taylor CC Certification.pdf" title="CC cert"></iframe>
+            </div>
         </div>
     </section> 
 
