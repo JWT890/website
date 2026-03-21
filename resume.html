@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="assets/styles.css">
         <style>
             body {
-                text-align: Arial, sans-serif;
+                font-family: Arial, sans-serif;
                 text-align: center;
             }
 
@@ -17,13 +17,16 @@
 
             .resume-container {
                 display: flex;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
                 margin: 40px auto;
-                max-width: 800px;
+                max-width: 1400px;
             }
 
             .resume-box {
                 width: 45%;
+                min-width: 400px;
             }
             
             .resume-box p {
@@ -47,14 +50,13 @@
                 font-weight: bold;
             }
 
-            iframe {
+            iframe, object {
                 width: 100%;
                 height: 500px;
                 border: 1px solid #ccc;
             }
         </style>
     </head>
-</html>
 <body>
     <input type="checkbox" id="dark-toggle">
     <label for="dark-toggle" class="toggle-label">Dark Mode</label>
@@ -62,7 +64,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="completed_projects.html"> Completed Projects</a></li>
+            <li><a href="completed_projects.html">Completed Projects</a></li>
             <li><a href="wip.html">Work in Progress Projects</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
@@ -74,7 +76,7 @@
         <div class="resume-box">
             <p>2026 IT Resume</p>
             <a href="assets/Jon William Taylor 2026 Resume IT.pdf" target="_blank">Download</a>
-            <object data="assets/Jon William Taylor 2026 Resumt IT.pdf" type="application/pdf" width="100%" height="500px">
+            <object data="assets/Jon William Taylor 2026 Resume IT.pdf" type="application/pdf" width="100%" height="500px">
                 <p>Your browser does not support PDFs. <a href="assets/Jon William Taylor 2026 Resume IT.pdf">Download the PDF</a>.</p>
             </object>
         </div>
@@ -88,8 +90,7 @@
             <a href="assets/Jon William Taylor 2026 Resume.pdf" target="_blank">Download</a>
             <iframe src="assets/Jon William Taylor 2026 Resume.pdf"></iframe>
         </div>
-        <div>
-        <div class = "resume-box">
+        <div class="resume-box">
             <p>Master 2025 Resume *Needs update for 2026*</p>
             <a href="assets/Jon William Taylor Master 2025 Resume.pdf" target="_blank">Download</a>
             <iframe src="assets/Jon William Taylor Master 2025 Resume.pdf"></iframe>
